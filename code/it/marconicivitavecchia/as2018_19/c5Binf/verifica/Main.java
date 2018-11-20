@@ -1,7 +1,7 @@
+//changed
 
-// TODO Inserire il package corretto
-// nota: potete usare il suggerimento della lampadina a sinistra (scegliete l'unica opzione sensata). 
-package __TODO__;
+
+package it.marconicivitavecchia.as2018_19.c5Binf.verifica;
 
 import javax.swing.*;
 
@@ -11,17 +11,41 @@ public class Main extends JFrame {
 		super("Formula 1 Passion");
 		super.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
-		// TODO Inserire la size in accordo con il wireframe (valori approssimati)
-		super.setSize(__TODO__,__TODO__);
 		
-		// TODO Usare StringBuilder per costruire la stringa HTML
+		super.setSize(250,300);
 		
-		// TODO Creare la stringa HTML per il wireframe
+		StringBuilder sb= new StringBuilder();
 		
-		// TODO Convertire lo StringBuilder in String
+		sb.append("<html>");
+		sb.append("<h1>Live the Company</h1>");
+		sb.append("<table>");
+		sb.append("<tr>");
+		sb.append("<th>Evento</th");
+		sb.append("<th>Data</th>");
+		sb.append("<th>Vado?<th>");
+		sb.append("</tr>");
+		sb.append("<tr>");
+		sb.append("<td>Cocktail Party</td>");
+		sb.append("<td>7 Dic</td>");
+		sb.append("<td>Si</td>");
+		sb.append("<tr>");
+		sb.append("<tr>");
+		sb.append("<td>Colazione Sociale</td>");
+		sb.append("<td>12 Dic</td>");
+		sb.append("<td>Si</td>");
+		sb.append("<tr>");
+		sb.append("<tr>");
+		sb.append("<td>Saluti di Natale</td>");
+		sb.append("<td>23 Dic</td>");
+		sb.append("<td>No</td>");
+		sb.append("<tr>");
+		sb.append("</table>");
+		sb.append("</html>");
 		
-		// TODO Assegnare correttamente la stringa create a JLabel
-		super.add(new JLabel(__TODO__));
+		
+		String htmlText = sb.toString();
+		
+		super.add(new JLabel(htmlText));
 		super.setVisible(true);
 		 
 		System.out.println("Verifica Swing-GitHub");
